@@ -1,0 +1,806 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMjVmQHK0U6bDOmQSo3ZUL6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/daniellimak/Projeto_DIO/blob/main/Estrutura_de_Dados\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GYm9PmEN9vXp",
+        "outputId": "33d11f42-9c71-4bef-bb68-02a8eea3966a"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 2, 3]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ],
+      "source": [
+        "#Criando uma lista chamada animais\n",
+        "animais = [1,2,3]\n",
+        "animais"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "animais = [\"cachorro\", \"gato\", 12345, 6.5]"
+      ],
+      "metadata": {
+        "id": "afi20OYa-PgX"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#imprimindo o primeiro elemento da lista\n",
+        "animais[0]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "83_jJ_3d-YVD",
+        "outputId": "06bde87e-b517-48eb-cb69-543e3349b847"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'cachorro'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "animais[1]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "-jxO7wUf-kA2",
+        "outputId": "7ea5051a-bd3d-4fdc-cbd6-1ea738416bb8"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'gato'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "animais[2]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "l9GNQwQT-naf",
+        "outputId": "2378fce8-9cc8-4956-e50c-60ec42fdda79"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "12345"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "animais[3]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6GyrbR2h-pvd",
+        "outputId": "099c414f-921f-4b71-abf7-9880a7e266f8"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "6.5"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "animais[0] = \"papagaio\""
+      ],
+      "metadata": {
+        "id": "jlRSJr0q-zMv"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "animais"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ehBSdZan-7jT",
+        "outputId": "023bed43-1d63-44e3-9324-1509c6d7166c"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['papagaio', 'gato', 12345, 6.5]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#removendo gato da lista\n",
+        "animais.remove(\"gato\")"
+      ],
+      "metadata": {
+        "id": "VGSyHHDq-8t5"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "animais"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WtHHEvwh_CHs",
+        "outputId": "1cb18309-bb11-4f2d-e6f4-9de86a04e4e7"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['papagaio', 12345, 6.5]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "len(animais)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GwqaJW1-_M3r",
+        "outputId": "208834a7-5959-4cda-d336-d87cfae42c68"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"gato\" in animais"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BHrmBQrV_PJZ",
+        "outputId": "b0425e44-48a9-4b34-dd06-2be9c2287dc9"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista =[500, 30, 300, 80, 10]"
+      ],
+      "metadata": {
+        "id": "6n8CXCpG_UKi"
+      },
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "max(lista)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YLQkpTJD_b3v",
+        "outputId": "f62bd0f3-8a30-4e49-bf87-1151ef33b126"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "500"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "min(lista)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ltk2iGsi_eL1",
+        "outputId": "036b128e-7bdc-43a1-c9b9-51531bd073db"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "10"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "animais.append(\"joão\")"
+      ],
+      "metadata": {
+        "id": "GRRcsvSX_g1_"
+      },
+      "execution_count": 21,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "animais"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4Ucdf-dW_kGd",
+        "outputId": "077fe356-34c9-4bcb-95e1-54de601c2150"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['papagaio', 12345, 6.5, 'joão']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "animais.extend([\"cobra\", 6])"
+      ],
+      "metadata": {
+        "id": "GNAwyVW5_nUo"
+      },
+      "execution_count": 23,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "animais.count(\"cachorro\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QGzbbiVR_vsU",
+        "outputId": "7a61f789-0c8f-46fa-d96a-cc5059e6190e"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista.sort()"
+      ],
+      "metadata": {
+        "id": "yo4c_vzU_zQ2"
+      },
+      "execution_count": 25,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lista"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZfkJ_CHO_2hH",
+        "outputId": "74064e80-8b3c-4c5f-bf1f-9ca1acdf4837"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[10, 30, 80, 300, 500]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tuplas"
+      ],
+      "metadata": {
+        "id": "0VFeY-UAAGxK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#As tuplas usam parênteses como sintaxe\n",
+        "tp = (\"banana\", \"Maçã\", 10, 50)"
+      ],
+      "metadata": {
+        "id": "drc8E19UAOy6"
+      },
+      "execution_count": 29,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Retornando o primeiro elemento\n",
+        "tp[0]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "dJ_w-YuqAZuF",
+        "outputId": "2342e180-63de-42fd-a96a-e0585256f9e3"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'banana'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Diferente das listas as tuplas são imutáveis, o quer dizer que não podemos alterar os seus elementos\n",
+        "tp[0] = \"laranja\""
+      ],
+      "metadata": {
+        "id": "ZZN6Aet0AcEr"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tp.count(\"Maçã\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "l-s5Qbo6Aqax",
+        "outputId": "2b7df82b-0937-4379-8051-2cee53fec0b5"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 35
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tp[0:2]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YV954pj4Aw6r",
+        "outputId": "9eaf20ad-918d-4648-bf7f-d286716ab019"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('banana', 'Maçã')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 36
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Dicionários"
+      ],
+      "metadata": {
+        "id": "eaNvj9RTA0aq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Para criar um dicionário utilizamos as {}\n",
+        "dc = {\"Maçã\" :20, \"banana\":10, \"laranja\":15, \"uva\":5} #Dicionários trabalham com o conceito chave e valor"
+      ],
+      "metadata": {
+        "id": "uOirCUo4A5rH"
+      },
+      "execution_count": 37,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dc"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iN3R3o_rBUZO",
+        "outputId": "2f4a48bc-2466-47ee-9090-056c0f8bbfd3"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'Maçã': 20, 'banana': 10, 'laranja': 15, 'uva': 5}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 38
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Acessando o valor de um dicionário através da chave\n",
+        "dc[\"Maçã\"]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1yp8Dio_BVQv",
+        "outputId": "5371ef91-d014-4443-d7d5-96e43dbd73b3"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "20"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Atualizando o valor da Maçã\n",
+        "dc[\"Maçã\"] = 25\n",
+        "dc"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ptcyCW08BcYG",
+        "outputId": "220b0f5a-fbcb-43a3-e39e-5d7f5b6b7ca1"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'Maçã': 25, 'banana': 10, 'laranja': 15, 'uva': 5}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 41
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dc.keys()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "A5LKO6-9BkMV",
+        "outputId": "8c87d335-c3ff-42d7-fed2-e9e6a110fbf3"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_keys(['Maçã', 'banana', 'laranja', 'uva'])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 42
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dc.values()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LYf9TqLLBrV2",
+        "outputId": "6ae2b189-f853-4459-91ae-c2f26deccbf6"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "dict_values([25, 10, 15, 5])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 43
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Verificando se já existe uma chave no dicionário e caso não exista inserir\n",
+        "dc.setdefault(\"limão\", 22)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zM2m-MiYBwSG",
+        "outputId": "24c2ff86-150e-4804-9d5e-e7de0c8f0a3f"
+      },
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "22"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 44
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dc"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HAHnjinSB8rR",
+        "outputId": "32129da7-f33f-4da7-c31c-abb8f708d3cc"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'Maçã': 25, 'banana': 10, 'laranja': 15, 'uva': 5, 'limão': 22}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 45
+        }
+      ]
+    }
+  ]
+}
