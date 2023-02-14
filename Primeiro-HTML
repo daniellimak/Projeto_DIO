@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+<body>
+    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2 id="inicio">Índice</h2>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <ul>
+        <li><a href="#historia">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#basica">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
+    </ul>
+
+    <h2 id="historia">História dos computadores</h2>
+    <h3>Primeira Geração</h3>
+    <p>Os computadores da primeira geração funcionavam por válvulas e circuitos eletrônicos. Um grande exemplo é o <strong>ENIAC(Eletronic Numerical Integrator and Computer)</strong></p>
+    
+    <h3>Segunda Geração</h3>
+    <p>Já na segunda geração os computadores funcionavam por meio de transistores, que substituiam as válvulas que eram maiores e mais lentas.</p>
+    <p>E no mesmo período começaram o uso comercial.</p>
+    
+    <h3>Terceira Geração</h3>
+    <p>Os da terceira geração funcinavam a base de circuitos integrados, substituindo os transistores e  seu tamanho diminuiu bastante e sua capacidade de processamento aumentou.</p>
+    <p>Nesse período iniciou-se a utilização de computadores pessoais.</p>
+    
+    <h3>Quarta Geração</h3>
+    <p> A quarta geração se destaca pelo grande aumento velocidade de processamento dos dados e também pelo surgimento de "computadores de mão" ou melhor dizendo: os smartphones, iPod, tablets, entre outros. </p>
+    <a href="#inicio">Voltar</a>
+
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <p> <strong>Os clients</strong> são computadores numa rede cliente-servidor que consome os serviços de uma outra entidade servidora. </p>
+    <a href="#inicio">Voltar</a>
+    
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <p>Os servers é normalmente um sistema computacional maior, capaz de processar aplicações, prestar serviços e armarzenar dados.
+    <p>Podem ser físicos ou virtuais, podem estar instalados local ou remotamente. Normalmente, são escaláveis e possuem alto poder de processamento.</p>
+    </p>
+    <a href="#inicio">Voltar</a>
+
+    <h2 id="basica">Como é uma estrutura básica de um HTML?</h2>
+    <p>A estrutura principal deve iniciar com a etiqueta &lt;HTML&gt; e terminar com a etiqueta &lt;/HTML&gt;. O cabeçalho, delimitado pelas etiquetas &lt;HEAD&gt; e &lt;/HEAD&gt;, destina-se a conter informações sobre o documento - por exemplo, o título do documento (que é construído com o elemento TITLE e aparece no título da janela do navegador). O corpo do documento, delimitado pelas etiquetas &lt;BODY&gt; e &lt;/BODY&gt;, destina-se ao conteúdo da página.
+    </p>
+    <a href="#inicio">Voltar</a>
+    
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    A principal diferença entre a lista ordenada e a lista não-ordenada está na maneira com que os itens de cada lista são apresentados - a lista ordenada enumera os elementos; a lista não-ordenada coloca marcadores antes de cada elemento.
+
+    <a href="#inicio">Voltar</a>
+    
+    <h2 id="referencias">Links de referências</h2>
+    
+    <ul>
+        <li><a href="http://www.nce.ufrj.br">http://www.nce.ufrj.br</a></li>
+        <li><a href="http://dio.me">http://dio.me</a></li>
+        <li><a href="http://w3c.org">http://w3c.org</a></li>
+    </ul>
+    <a href="#inicio">Voltar</a>
+</body>
+</html>
