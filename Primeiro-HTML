@@ -60,9 +60,9 @@
     <h2 id="referencias">Links de referências</h2>
     
     <ul>
-        <li><a href="http://www.nce.ufrj.br">http://www.nce.ufrj.br</a></li>
-        <li><a href="http://dio.me">http://dio.me</a></li>
-        <li><a href="http://w3c.org">http://w3c.org</a></li>
+        <li><a href="http://www.nce.ufrj.br" target="_blank">http://www.nce.ufrj.br</a></li>
+        <li><a href="http://dio.me" target="_blank">http://dio.me</a></li>
+        <li><a href="http://w3c.org" target="_blank">http://w3c.org</a></li>
     </ul>
     <a href="#inicio">Voltar</a>
 </body>
